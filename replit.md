@@ -7,6 +7,7 @@ EduTrack is a comprehensive multi-role educational management system designed fo
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+User Interest: Mobile deployment options for the web application.
 
 ## System Architecture
 
