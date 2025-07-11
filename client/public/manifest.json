@@ -1,0 +1,41 @@
+{
+  "name": "EduTrack - Institute Management System",
+  "short_name": "EduTrack",
+  "description": "Comprehensive educational management system for diploma engineering institutes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "en-US",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "360x640",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

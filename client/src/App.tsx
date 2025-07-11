@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Layout from "@/components/Layout";
+import InstallPrompt from "@/components/InstallPrompt";
 import Login from "@/pages/Login";
 import Dashboard from "@/pages/Dashboard";
 import Branches from "@/pages/Branches";
@@ -57,6 +58,7 @@ function App() {
         <LanguageProvider>
           <AuthProvider>
             <Toaster />
+            <InstallPrompt />
             <Router />
           </AuthProvider>
         </LanguageProvider>

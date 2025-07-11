@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" fill="url(#grad)" rx="24"/>
+  <g fill="white">
+    <!-- Education icon -->
+    <path d="M96 48L48 72v48l48 24 48-24V72L96 48zm0 16l32 16-32 16-32-16 32-16zm-32 32l32 16v16l-32-16V96zm64 0v16l-32 16V96l32-16z"/>
+    <!-- Letter E -->
+    <text x="96" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">EduTrack</text>
+  </g>
+</svg>
