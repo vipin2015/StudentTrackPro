@@ -1,0 +1,117 @@
+🎯 Goal:
+Build a multi-role app for a diploma engineering institute to track:
+
+Student attendance
+
+Subject-wise and unit-wise syllabus coverage
+
+Performance through unit-level quizzes
+
+Teacher and student syllabus progress comparison
+
+Branch and department management
+
+The app must support Hindi + English UI, with a toggle for switching between languages.
+
+👤 User Roles:
+Head of Institute (Admin)
+
+Add new branches
+
+Add HODs and teachers
+
+View overall performance of all students, teachers, branches
+
+Head of Department (HOD)
+
+Add students
+
+Add subjects, define syllabus (units + practicals)
+
+Assign teachers to subjects
+
+Monitor department performance
+
+Teacher
+
+Mark attendance for students in assigned subjects
+
+Update syllabus coverage (teacher coverage shown in light color bar)
+
+Add unit-wise questions (MCQ or short answer)
+
+Student
+
+View assigned subjects and units
+
+View teacher's coverage (light color) and mark personal progress (dark color)
+
+Read unit summary text before test
+
+Attempt unit quiz → If score ≥80%, unit marked as completed for student
+
+View overall and subject-wise progress
+
+📊 Required Sheets (already prepared):
+Users
+
+id, email, name, role (admin/hod/teacher/student), branch, subject_ids
+
+Branches
+
+id, name, hod_email
+
+Subjects
+
+id, name, branch_id, teacher_email
+
+Units
+
+id, subject_id, unit_no, title, summary
+
+Attendance
+
+id, date, student_email, subject_id, present (TRUE/FALSE)
+
+Progress
+
+id, student_email, subject_id, unit_id, teacher_cov (0-100), student_cov (0-100), quiz_score
+
+📱 Interface Features:
+Language Switch Button on top → Switches labels/content between Hindi & English
+
+Role-based dashboard views:
+
+Admin: Add branch, add HOD/teachers, view analytics
+
+HOD: Manage subjects, students, syllabus
+
+Teacher: Attendance form, syllabus coverage, unit-wise question entry
+
+Student: View syllabus units, mark progress, attempt quiz
+
+Progress Bars:
+
+Light tone: Teacher coverage
+
+Dark tone: Student’s self-marked coverage
+
+Unit Tests:
+
+Show unit summary before test
+
+Score stored in “Progress”
+
+If score ≥80%, unit marked complete
+
+Attendance Entry Form: Per subject, toggle present/absent
+
+🌐 Tools Expected:
+Glide App using Google Sheet as data source
+
+Visibility rules based on user role (role column in “Users” sheet)
+
+Hindi/English controlled via a "Language" column or toggle
+
+Tabs: Dashboard, Attendance, Subjects, Units, Progress, Settings (Language toggle)
+
