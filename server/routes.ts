@@ -434,3 +434,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
   const httpServer = createServer(app);
   return httpServer;
 }
+import devRoutes from './devRoutes'; // relative path based on location
+
+export async function registerRoutes(app: express.Express) {
+  // Your existing routes go here
+  // ...
+
+  if (process.env.NODE_ENV !== 'production') {
+    app.use(devRoutes); // only expose dev route in development
+  }
+
+  return app;
+}
